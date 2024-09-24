@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://drfd0nuymiag0"]
+
+[ext_resource type="Texture2D" uid="uid://bvwdatjcv2r81" path="res://icon.svg" id="1_s3yyu"]
+[ext_resource type="Texture2D" uid="uid://47t74hvl1k0h" path="res://fish.png" id="2_v0jfq"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(-1, 4)
+texture = ExtResource("1_s3yyu")
+
+[node name="Fish" type="Sprite2D" parent="."]
+position = Vector2(398.375, 240.25)
+scale = Vector2(0.0457317, 0.0415941)
+texture = ExtResource("2_v0jfq")
