@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bsy77ihvkoi3t"]
+
+[ext_resource type="Texture2D" uid="uid://bw075e3xciu8u" path="res://bigfish.png" id="1_qs625"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(2622, 2535)
+scale = Vector2(28.9464, 26.125)
+texture = ExtResource("1_qs625")

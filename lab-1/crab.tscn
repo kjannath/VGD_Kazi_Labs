@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://benhq63tvkci1"]
+
+[ext_resource type="Texture2D" uid="uid://bi73r4novdccx" path="res://crab.webp" id="2_wbvoj"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Crab" type="Sprite2D" parent="."]
+position = Vector2(7305, 15889)
+scale = Vector2(2.9026, 3.09271)
+texture = ExtResource("2_wbvoj")

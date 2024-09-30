@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://dv73ijf0lgbua"]
+
+[ext_resource type="Texture2D" uid="uid://b0jd0y50iecqr" path="res://sea.jpg" id="1_86xiy"]
+[ext_resource type="Texture2D" uid="uid://cr3ejh1aijtio" path="res://plant.webp" id="2_ec2wo"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sea" type="Sprite2D" parent="."]
+position = Vector2(1, 22)
+scale = Vector2(83.3971, 84.4774)
+texture = ExtResource("1_86xiy")
+
+[node name="Plant" type="Sprite2D" parent="."]
+position = Vector2(-20551, 13338)
+scale = Vector2(10.4217, 10.6848)
+texture = ExtResource("2_ec2wo")
+
+[node name="Sprite2D" type="Sprite2D" parent="Plant"]
+position = Vector2(3614.29, -315.291)
+scale = Vector2(0.835493, 0.765442)
+texture = ExtResource("2_ec2wo")

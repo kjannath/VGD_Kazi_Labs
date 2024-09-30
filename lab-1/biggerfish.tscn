@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cp34g87tp7sir"]
+
+[ext_resource type="Texture2D" uid="uid://18kty7t5l3pe" path="res://fish2.png" id="2_ksvim"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="bigger fish" type="Sprite2D" parent="."]
+position = Vector2(5590.25, -5918.75)
+scale = Vector2(1.09662, 1.10799)
+texture = ExtResource("2_ksvim")

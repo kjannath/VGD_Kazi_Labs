@@ -1,15 +1,23 @@
-[gd_scene load_steps=3 format=3 uid="uid://drfd0nuymiag0"]
+[gd_scene load_steps=6 format=3 uid="uid://drfd0nuymiag0"]
 
-[ext_resource type="Texture2D" uid="uid://bvwdatjcv2r81" path="res://icon.svg" id="1_s3yyu"]
+[ext_resource type="PackedScene" uid="uid://dv73ijf0lgbua" path="res://Background.tscn" id="1_c0rjr"]
+[ext_resource type="PackedScene" uid="uid://benhq63tvkci1" path="res://crab.tscn" id="2_8rhoi"]
 [ext_resource type="Texture2D" uid="uid://47t74hvl1k0h" path="res://fish.png" id="2_v0jfq"]
+[ext_resource type="PackedScene" uid="uid://cp34g87tp7sir" path="res://biggerfish.tscn" id="4_wi53m"]
+[ext_resource type="PackedScene" uid="uid://bsy77ihvkoi3t" path="res://biggestfish.tscn" id="5_cfr63"]
 
 [node name="Node2D" type="Node2D"]
+position = Vector2(0, 13)
 
-[node name="Icon" type="Sprite2D" parent="."]
-position = Vector2(-1, 4)
-texture = ExtResource("1_s3yyu")
+[node name="Background" parent="." instance=ExtResource("1_c0rjr")]
+
+[node name="Crab" parent="Background" instance=ExtResource("2_8rhoi")]
 
 [node name="Fish" type="Sprite2D" parent="."]
-position = Vector2(398.375, 240.25)
-scale = Vector2(0.0457317, 0.0415941)
+position = Vector2(-11197, -4265)
+scale = Vector2(1.16828, 1.15339)
 texture = ExtResource("2_v0jfq")
+
+[node name="Bigger Fish" parent="." instance=ExtResource("4_wi53m")]
+
+[node name="Biggest Fish" parent="." instance=ExtResource("5_cfr63")]
