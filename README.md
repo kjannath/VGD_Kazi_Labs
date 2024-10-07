@@ -10,6 +10,7 @@ Questions:
 How do I code the characters to move?  
 What is the point of having multiple scenes/ What is a scene?  
 
+------------------------------------------------------------------------------------------------------------  
 
 Lab 2  
 Description: A bird that can move up and down with user input. User must click up arrow or down arrow to control it. There are also branches that are coming towards the bird. The bird and branches both have speed as an exported value.  
