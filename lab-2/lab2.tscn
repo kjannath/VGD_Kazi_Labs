@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://udximwtqi5q3"]
+[gd_scene load_steps=7 format=3 uid="uid://udximwtqi5q3"]
 
 [ext_resource type="Texture2D" uid="uid://0a3i54f7b4sk" path="res://bird.png" id="1_3n051"]
 [ext_resource type="PackedScene" uid="uid://tkle40frvj3o" path="res://sky.tscn" id="1_kg8cy"]
 [ext_resource type="Script" path="res://sprite_2d.gd" id="2_pr3gj"]
 [ext_resource type="Texture2D" uid="uid://clp3w5u3sd3bp" path="res://branch.png" id="3_ig3vr"]
 [ext_resource type="Script" path="res://sprite_2d_2.gd" id="4_oh60v"]
+[ext_resource type="PackedScene" uid="uid://b7jy7mi74cklf" path="res://branch.tscn" id="6_0ii7l"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -17,16 +18,17 @@ texture = ExtResource("1_3n051")
 script = ExtResource("2_pr3gj")
 birdSpeed = 4
 
-[node name="branch" type="Sprite2D" parent="."]
+[node name="branchSpawner" type="Sprite2D" parent="."]
 position = Vector2(1256, 322)
 scale = Vector2(0.188967, 0.204379)
 texture = ExtResource("3_ig3vr")
 script = ExtResource("4_oh60v")
 
-[node name="branch" type="Sprite2D" parent="branch"]
-position = Vector2(2111.48, -924.75)
-texture = ExtResource("3_ig3vr")
+[node name="branch" parent="branchSpawner" instance=ExtResource("6_0ii7l")]
+branchSpeed = 6
 
-[node name="branch2" type="Sprite2D" parent="branch"]
-position = Vector2(3953.07, 582.25)
-texture = ExtResource("3_ig3vr")
+[node name="Timer" type="Timer" parent="branchSpawner"]
+wait_time = 2.0
+autostart = true
+
+[connection signal="timeout" from="branchSpawner/Timer" to="branchSpawner" method="_on_timer_timeout"]

@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://b7jy7mi74cklf"]
+
+[ext_resource type="Texture2D" uid="uid://clp3w5u3sd3bp" path="res://branch.png" id="1_b7qwu"]
+[ext_resource type="Script" path="res://branch_mover.gd" id="2_au65q"]
+
+[node name="branch" type="Sprite2D"]
+texture = ExtResource("1_b7qwu")
+script = ExtResource("2_au65q")
+branchSpeed = 8
