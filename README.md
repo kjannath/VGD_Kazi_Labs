@@ -19,3 +19,12 @@ My vision: I am envisioning a game where a bird must dodge obstacles that come i
   
 Questions: 
 How can I spawn obstacles infinitely?
+
+
+------------------------------------------------------------------------------------------------------------  
+
+Lab 4
+Description: A dummy player represented by a CSG capsule is able to navigate its 3D environment. The environment is a river, and the player must jump from rock to rock in order to reach the other side of the river.
+
+Questions:
+How can I create a game where the camera perspective changes with the users control?
